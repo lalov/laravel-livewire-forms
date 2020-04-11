@@ -62,7 +62,11 @@ class FormComponent extends Component
     public function submit()
     {
 
-        $this->validate($this->rules(), [], $this->attributes());
+        $this->validate(
+            $this->rules(),
+            $this->preparedMessages(),
+            $this->attributes()
+        );
 
         $field_names = [];
         foreach ($this->fields() as $field) $field_names[] = $field->name;
@@ -98,6 +102,23 @@ class FormComponent extends Component
     public function saveAndGoBackResponse()
     {
         return redirect()->route('users.index');
+    }
+
+    public function messages()
+    {
+        return [];
+    }
+
+    private function preparedMessages()
+    {
+        $messages = $this->messages();
+
+        foreach($messages as $key => $message) {
+            $messages['form_data.' . $key] = $message;
+            unset($messages[$key]);
+        }
+
+        return $messages;
     }
 
     public function attributes()
