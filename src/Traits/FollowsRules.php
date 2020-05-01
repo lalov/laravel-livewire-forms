@@ -1,6 +1,6 @@
 <?php
 
-namespace Kdion4891\LaravelLivewireForms\Traits;
+namespace smartcode\LaravelLivewireForms\Traits;
 
 trait FollowsRules
 {

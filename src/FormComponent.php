@@ -1,14 +1,14 @@
 <?php
 
-namespace Kdion4891\LaravelLivewireForms;
+namespace smartcode\LaravelLivewireForms;
 
 use Illuminate\Support\Arr;
-use Kdion4891\LaravelLivewireForms\Traits\FollowsRules;
-use Kdion4891\LaravelLivewireForms\Traits\HandlesArrays;
-use Kdion4891\LaravelLivewireForms\Traits\UploadsFiles;
+use smartcode\LaravelLivewireForms\Traits\FollowsRules;
+use smartcode\LaravelLivewireForms\Traits\HandlesArrays;
+use smartcode\LaravelLivewireForms\Traits\UploadsFiles;
 use Livewire\Component;
 
-class FormComponent extends Component
+abstract class FormComponent extends Component
 {
     use FollowsRules, UploadsFiles, HandlesArrays;
 
@@ -49,15 +49,7 @@ class FormComponent extends Component
         ]);
     }
 
-    public function fields()
-    {
-        return [
-            Field::make('Name')->input()->rules(['required', 'string', 'max:255']),
-            Field::make('Email')->input('email')->rules(['required', 'string', 'email', 'max:255', 'unique:users,email']),
-            Field::make('Password')->input('password')->rules(['required', 'string', 'min:8', 'confirmed']),
-            Field::make('Confirm Password', 'password_confirmation')->input('password'),
-        ];
-    }
+    abstract public function fields();
 
     public function submit()
     {
@@ -75,12 +67,7 @@ class FormComponent extends Component
         $this->success();
     }
 
-    public function success()
-    {
-        $this->form_data['password'] = bcrypt($this->form_data['password']);
-
-        \App\User::create($this->form_data);
-    }
+    abstract public function success();
 
     public function saveAndStay()
     {
