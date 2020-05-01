@@ -1,6 +1,6 @@
 <?php
 
-namespace smartcode\LaravelLivewireForms\Providers;
+namespace Smartcode\LaravelLivewireForms\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use smartcode\LaravelLivewireForms\Commands\MakeForm;

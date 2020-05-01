@@ -1,6 +1,6 @@
 <?php
 
-namespace smartcode\LaravelLivewireForms\Traits;
+namespace Smartcode\LaravelLivewireForms\Traits;
 
 trait UploadsFiles
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace smartcode\LaravelLivewireForms\Commands;
+namespace Smartcode\LaravelLivewireForms\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

@@ -1,7 +1,7 @@
 {
     "name": "smartcode/laravel-livewire-forms",
     "description": "A dynamic, responsive Laravel Livewire form component with realtime validation, file uploads, array fields, and more.",
-    "homepage": "https://github.com/smartcode/laravel-livewire-forms",
+    "homepage": "https://github.com/smartcode-ch/laravel-livewire-forms",
     "license": "MIT",
     "authors": [
         {
@@ -12,13 +12,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "smartcode\\LaravelLivewireForms\\": "src"
+            "Smartcode\\LaravelLivewireForms\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "smartcode\\LaravelLivewireForms\\Providers\\FormServiceProvider"
+                "Smartcode\\LaravelLivewireForms\\Providers\\FormServiceProvider"
             ]
         }
     }
