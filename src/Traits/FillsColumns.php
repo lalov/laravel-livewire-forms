@@ -1,6 +1,6 @@
 <?php
 
-namespace Smartcode\LaravelLivewireForms\Traits;
+namespace Kdion4891\LaravelLivewireForms\Traits;
 
 use Illuminate\Support\Facades\Schema;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Smartcode\LaravelLivewireForms;
+namespace Kdion4891\LaravelLivewireForms;
 
 use App\Components\Helpers\FormField;
 use Illuminate\Support\Str;

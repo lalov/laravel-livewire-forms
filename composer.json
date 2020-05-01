@@ -1,5 +1,5 @@
 {
-    "name": "smartcode/laravel-livewire-forms",
+    "name": "kdion4891/laravel-livewire-forms",
     "description": "A dynamic, responsive Laravel Livewire form component with realtime validation, file uploads, array fields, and more.",
     "homepage": "https://github.com/smartcode-ch/laravel-livewire-forms",
     "license": "MIT",
@@ -12,13 +12,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Smartcode\\LaravelLivewireForms\\": "src"
+            "Kdion4891\\LaravelLivewireForms\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Smartcode\\LaravelLivewireForms\\Providers\\FormServiceProvider"
+                "Kdion4891\\LaravelLivewireForms\\Providers\\FormServiceProvider"
             ]
         }
     }

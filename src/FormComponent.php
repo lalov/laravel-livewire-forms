@@ -1,6 +1,6 @@
 <?php
 
-namespace Smartcode\LaravelLivewireForms;
+namespace Kdion4891\LaravelLivewireForms;
 
 use Illuminate\Support\Arr;
 use smartcode\LaravelLivewireForms\Traits\FollowsRules;
