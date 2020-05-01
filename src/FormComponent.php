@@ -3,9 +3,9 @@
 namespace Kdion4891\LaravelLivewireForms;
 
 use Illuminate\Support\Arr;
-use smartcode\LaravelLivewireForms\Traits\FollowsRules;
-use smartcode\LaravelLivewireForms\Traits\HandlesArrays;
-use smartcode\LaravelLivewireForms\Traits\UploadsFiles;
+use  Kdion4891\LaravelLivewireForms\Traits\FollowsRules;
+use  Kdion4891\LaravelLivewireForms\Traits\HandlesArrays;
+use  Kdion4891\LaravelLivewireForms\Traits\UploadsFiles;
 use Livewire\Component;
 
 abstract class FormComponent extends Component

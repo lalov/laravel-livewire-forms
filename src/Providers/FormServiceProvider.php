@@ -3,7 +3,7 @@
 namespace Kdion4891\LaravelLivewireForms\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use smartcode\LaravelLivewireForms\Commands\MakeForm;
+use Kdion4891\LaravelLivewireForms\Commands\MakeForm;
 
 class FormServiceProvider extends ServiceProvider
 {
