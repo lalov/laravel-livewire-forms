@@ -31,7 +31,7 @@ abstract class FormComponent extends Component
 
         foreach ($this->fields() as $field) {
             if (!isset($this->form_data[$field->name])) {
-                $array = in_array($field->type, ['checkbox', 'file']);
+                $array = in_array($field->type, ['checkboxes', 'file']);
                 $this->form_data[$field->name] = $field->default ?? ($array ? [] : null);
             }
         }
@@ -50,6 +50,11 @@ abstract class FormComponent extends Component
     }
 
     abstract public function fields();
+
+    public function updated($field)
+    {
+        $this->validateOnly($field, $this->rules(true), [], $this->attributes());
+    }
 
     public function submit()
     {
