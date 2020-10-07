@@ -4,7 +4,7 @@ namespace Kdion4891\LaravelLivewireForms\Traits;
 
 trait FollowsRules
 {
-    public function rules($realtime = false)
+    public function get_rules($realtime = false)
     {
         $rules = [];
         $rules_ignore = $realtime ? $this->rulesIgnoreRealtime() : [];

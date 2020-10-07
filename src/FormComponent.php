@@ -53,14 +53,14 @@ abstract class FormComponent extends Component
 
     public function updated($field)
     {
-        $this->validateOnly($field, $this->rules(true), [], $this->attributes());
+        $this->validateOnly($field, $this->get_rules(true), [], $this->attributes());
     }
 
     public function submit()
     {
 
         $this->validate(
-            $this->rules(),
+            $this->get_rules(),
             $this->preparedMessages(),
             $this->attributes()
         );
